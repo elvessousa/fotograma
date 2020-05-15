@@ -1,0 +1,26 @@
+/* Loader */
+.loader,
+.message {
+  align-items: center;
+  background: #fff;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  color: #bbb;
+}
+
+.message-title {
+  margin: 0;
+}
+
+.no-pictures {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 0.9em;
+}

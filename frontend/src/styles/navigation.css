@@ -1,0 +1,55 @@
+/* Navigation */
+.navigation {
+  background: #fff;
+  position: absolute;
+  border-bottom: 1px solid #eee;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0 1em 0 auto;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5em;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.nav-links button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: normal;
+  padding: 0.75em;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* Logo */
+.brand {
+  padding: 0.8em;
+  font-weight: 900;
+}
+
+.brand::before {
+  content: '';
+  width: 2em;
+  height: 2em;
+  background: url(../assets/fotograma.svg) no-repeat center;
+  background-size: contain;
+  background-origin: content-box;
+  float: left;
+  margin: -0.2em 0.5em 0 0;
+}

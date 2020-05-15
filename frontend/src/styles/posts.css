@@ -1,0 +1,109 @@
+.post-container {
+  background: #fff;
+  border-radius: 0.5em;
+  border: 1px solid #eee;
+  margin: 4em auto;
+  max-width: 90vw;
+  overflow: hidden;
+  width: 600px;
+}
+
+.post-title {
+  margin: 0;
+  padding: 1em;
+}
+
+.post-image {
+  display: block;
+  width: 100%;
+}
+
+.post-content {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+.delete-post {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  float: right;
+  margin-top: 0.5em;
+  padding: 1em;
+}
+
+.liked-by {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 1em;
+}
+
+.post-interaction {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+
+.post-interaction button {
+  background: transparent;
+  border: 0;
+}
+
+.post-date {
+  opacity: 0.5;
+  padding: 0.5em 1em;
+  margin: 0;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.to-left {
+  margin-left: auto;
+}
+
+.bookmark {
+  margin-left: auto;
+}
+
+.view-comments {
+  background: transparent;
+  border: 0;
+  font-size: 0.7em;
+  margin: 0 1em;
+  opacity: 0.5;
+  outline: none;
+  padding: 0;
+}
+
+.post-comments {
+  list-style: none;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+.comment-form {
+  border-top: 1px solid #eee;
+  display: flex;
+}
+
+.comment-input {
+  border: 0;
+  flex: 1;
+  font-size: 0.8em;
+  outline: none;
+  padding: 1em;
+}
+
+.comment-button {
+  background: transparent;
+  border: 0;
+  color: dodgerblue;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: bold;
+  outline: none;
+  padding: 1em;
+}

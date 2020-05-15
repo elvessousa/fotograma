@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+/* General */
+body {
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  margin: 2em 0;
+}
+
+@import url('navigation.css');
+@import url('forms.css');
+@import url('profile.css');
+@import url('posts.css');
+@import url('messages.css');

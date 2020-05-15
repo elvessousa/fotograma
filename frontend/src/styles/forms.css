@@ -1,0 +1,125 @@
+/* Login */
+.create-post,
+.signin,
+.signup {
+  width: 20em;
+  max-width: 90vw;
+  margin: 5em auto;
+  text-align: center;
+}
+
+.edit-profile {
+  width: 30em;
+  margin: 4em auto;
+  max-width: 90vw;
+}
+
+.create-post input,
+.signin input,
+.signup input {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.8em;
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-profile input:focus,
+.edit-profile textarea:focus,
+.create-post input:focus,
+.signin input:focus,
+.signup input:focus {
+  border-bottom: 2px solid #000;
+}
+
+.file-chooser {
+  align-items: center;
+  background-color: #e8e8e8;
+  background-size: cover;
+  border-radius: 0.5em;
+  border: 1px solid #eee;
+  color: #999;
+  cursor: pointer;
+  display: flex;
+  height: 20em;
+  justify-content: center;
+  margin-bottom: 2em;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.file-chooser:hover {
+  filter: brightness(1.05);
+}
+
+.create-post input[type='file'],
+.signin input[type='file'],
+.signup input[type='file'] {
+  appearance: none;
+}
+
+.create-post button,
+.edit-profile button,
+.signin button,
+.signup button {
+  background: dodgerblue;
+  border-radius: 0.5em;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 1em 0;
+  padding: 1em;
+  width: 100%;
+  outline: none;
+}
+
+.create-post button:hover,
+.signin button:hover,
+.signup button:hover {
+  filter: brightness(1.1);
+}
+
+.create-post button:active,
+.signin button:active,
+.signup button:active {
+  margin-top: 1.1em;
+  filter: brightness(0.9);
+}
+
+.create-post .file {
+  margin-top: 2em;
+}
+
+.box-phrase {
+  font-size: 0.8em;
+}
+
+.fields {
+  display: flex;
+}
+.form-label {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 1em;
+  display: block;
+  width: 8em;
+}
+
+.text-field {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.8em;
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
