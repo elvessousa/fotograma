@@ -1,0 +1,20 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="Icons.tar" inkscape:version="1.0 (4035a4f, 2020-05-01)" id="svg8" version="1.1" viewBox="0 0 29.665342 24.105707" height="24.105707mm" width="29.665342mm">
+  <defs id="defs2"/>
+  <sodipodi:namedview inkscape:snap-global="false" inkscape:guide-bbox="true" showguides="true" inkscape:window-maximized="0" inkscape:window-y="22" inkscape:window-x="0" inkscape:window-height="856" inkscape:window-width="1252" inkscape:showpageshadow="false" inkscape:pagecheckerboard="true" showgrid="false" inkscape:document-rotation="0" inkscape:current-layer="layer5" inkscape:document-units="mm" inkscape:cy="49.013238" inkscape:cx="212.5066" inkscape:zoom="1.3514451" inkscape:pageshadow="2" inkscape:pageopacity="0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base">
+    <sodipodi:guide id="guide93" orientation="0,-1" position="33.380163,11.967466"/>
+    <sodipodi:guide id="guide148" orientation="1,0" position="2.7687202,-12.995144"/>
+    <sodipodi:guide id="guide150" orientation="1,0" position="26.71815,-10.503296"/>
+  </sodipodi:namedview>
+  <metadata id="metadata5">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <svg:g style="display:none" transform="translate(-67.503846,-25.235465)" id="layer1" inkscape:groupmode="layer" inkscape:label="heart">
+    <svg:path sodipodi:nodetypes="csacasc" id="path12" d="m 81.858014,29.869052 c 0,0 2.451846,-4.132883 7.287693,-3.878562 4.006019,0.210679 7.5475,5.727662 7.126528,9.730622 -0.677757,6.444669 -14.479604,12.918065 -14.479604,12.918065 0,0 -13.217197,-7.678806 -13.423293,-14.199279 -0.116729,-3.693093 3.403342,-8.295706 7.079579,-8.509485 3.908849,-0.227307 6.409097,3.938639 6.409097,3.938639 z" style="fill:#000000;stroke:#000000;stroke-width:0.251864px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  </svg:g>
+  </svg>
