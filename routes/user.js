@@ -112,4 +112,19 @@ router.put('/update-avatar', requireLogin, (req, res) => {
   );
 });
 
+// -----------------------------------
+// User unfollow
+// -----------------------------------
+router.post('/search-users', (req, res) => {
+  let userPattern = new RegExp(`^${req.body.query}`);
+  User.find({ email: { $regex: userPattern } })
+    .select('_id name avatar')
+    .then((user) => {
+      res.json({ user: user });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 module.exports = router;
