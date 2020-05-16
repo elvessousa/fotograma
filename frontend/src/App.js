@@ -13,6 +13,7 @@ import Signup from './pages/Signup';
 import CreatePost from './pages/CreatePost';
 import Reset from './pages/Reset';
 import NewPassword from './pages/NewPassword';
+import SearchUser from './pages/SearchUser';
 
 import { reducer, initialState } from './reducers/userReducer';
 
@@ -67,6 +68,9 @@ const Routing = () => {
       </Route>
       <Route path="/feed">
         <Home />
+      </Route>
+      <Route path="/search">
+        <SearchUser />
       </Route>
     </Switch>
   );
