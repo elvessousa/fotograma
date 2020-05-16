@@ -1,0 +1,56 @@
+.search-users {
+  margin: 1em 0;
+}
+
+.search-input {
+  box-sizing: border-box;
+  font-size: 2em;
+  margin-top: 1.2em;
+  padding: 0.5em;
+  text-align: center;
+  width: 100vw;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-input:hover {
+  background: #eee;
+}
+
+.search-input:focus {
+  background: #eee;
+  border-bottom: 2px solid #ccc;
+}
+
+.user-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60vw;
+  margin: 3em auto;
+  max-width: 90vw;
+  list-style: none;
+  justify-content: center;
+}
+
+.user-list .user-picture {
+  margin: 0.5em;
+}
+
+.user-list-name {
+  text-align: center;
+}
+
+.user-message {
+  padding: 2em;
+  text-align: center;
+  opacity: 0.3;
+  font-size: 1.2em;
+}
+
+.loading-search {
+  padding: 2em;
+  text-align: center;
+  opacity: 0.5;
+}
