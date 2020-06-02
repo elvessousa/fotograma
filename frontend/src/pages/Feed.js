@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
-import PostItem from '../components/PostItem';
-import { UserContext } from '../App';
-import Message from '../components/Message';
-import Loader from '../components/Loader';
+import React, { useState, useEffect, useContext } from "react";
+import PostItem from "../components/PostItem";
+import { UserContext } from "../App";
+import Message from "../components/Message";
+import Loader from "../components/Loader";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -12,9 +12,9 @@ export default function Home() {
 
   useEffect(() => {
     setLoading(true);
-    fetch('/feed', {
+    fetch("/feed", {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem('jwt')}`,
+        Authorization: `Bearer ${localStorage.getItem("jwt")}`,
       },
     })
       .then(async (res) => {
@@ -23,15 +23,15 @@ export default function Home() {
         setLoading(false);
       })
       .catch((err) => {
-        console.error('error', err);
+        console.error("error", err);
       });
   }, []);
 
   const deletePost = (postId) => {
     fetch(`/deletepost/${postId}`, {
-      method: 'delete',
+      method: "delete",
       headers: {
-        Authorization: `Bearer ${localStorage.getItem('jwt')}`,
+        Authorization: `Bearer ${localStorage.getItem("jwt")}`,
       },
     })
       .then(async (res) => {
@@ -49,14 +49,16 @@ export default function Home() {
   return (
     <>
       {!loading ? (
-        <div className="home">
-          <h1>Explore</h1>
+        <div className='home'>
+          {data.length === 0 && (
+            <Message title='All by myself...' text="Don't wanna be..." />
+          )}
           {data.map((item) => {
             return (
-              <div className="post-container" key={item._id}>
+              <div className='post-container' key={item._id}>
                 {item.postedBy._id === state._id && (
                   <button
-                    className="delete-post"
+                    className='delete-post'
                     onClick={() => deletePost(item._id)}
                   >
                     Delete

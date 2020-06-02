@@ -7,7 +7,7 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd frontend && yarn install && yarn build"
   },
   "engines": {
-    "node": "12.14.0"
+    "node": "14.3.0"
   },
   "license": "ISC",
   "dependencies": {

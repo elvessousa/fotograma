@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
-import PostItem from '../components/PostItem';
-import { UserContext } from '../App';
+import React, { useState, useEffect, useContext } from "react";
+import PostItem from "../components/PostItem";
+import { UserContext } from "../App";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -8,9 +8,9 @@ export default function Home() {
   const { state, dispatch } = useContext(UserContext);
 
   useEffect(() => {
-    fetch('/all', {
+    fetch("/all", {
       headers: {
-        Authorization: `Bearer ${localStorage.getItem('jwt')}`,
+        Authorization: `Bearer ${localStorage.getItem("jwt")}`,
       },
     })
       .then(async (res) => {
@@ -18,15 +18,15 @@ export default function Home() {
         setData(result.posts);
       })
       .catch((err) => {
-        console.error('error', err);
+        console.error("error", err);
       });
   }, []);
 
   const deletePost = (postId) => {
     fetch(`/deletepost/${postId}`, {
-      method: 'delete',
+      method: "delete",
       headers: {
-        Authorization: `Bearer ${localStorage.getItem('jwt')}`,
+        Authorization: `Bearer ${localStorage.getItem("jwt")}`,
       },
     })
       .then(async (res) => {
@@ -41,13 +41,14 @@ export default function Home() {
       });
   };
   return (
-    <div className="home">
+    <div className='home'>
+      <h1>Explore</h1>
       {data.map((item) => {
         return (
-          <div className="post-container" key={item._id}>
+          <div className='post-container' key={item._id}>
             {item.postedBy._id === state._id && (
               <button
-                className="delete-post"
+                className='delete-post'
                 onClick={() => deletePost(item._id)}
               >
                 Delete
